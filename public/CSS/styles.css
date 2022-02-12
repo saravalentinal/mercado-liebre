@@ -1,0 +1,592 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+
+body{
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        background-color: #ebebeb;
+    }
+    
+
+
+.titulares{
+    font-size: 24px;
+    color: rgb(107, 107, 107);
+    margin: 20px 0;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento, .descripcion{
+    font-size: 16px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+
+/*---ÍCONO ENVÍO---*/
+
+.icono-envio{
+    color: #39b54a;
+}
+
+main section article .main-article{
+    position: relative;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 0.5s;
+}
+
+main section div.flexbox-productos article div.main-article i:hover{
+    transform: rotate(-90deg);
+}
+
+/*---NAVEGADOR---*/
+
+.primerLista li a, .segundaLista li a{
+    text-decoration: none;
+}
+
+.primerLista, .segundaLista{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+
+
+/*---BURGER---*/
+
+.burger-menu{
+    color: white;
+    border-radius: 2.5px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.burger{
+    background-color: #0044aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 20px;
+}
+
+/*---FOOTER---*/
+
+footer{
+    text-align: center;
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    background-color: white;
+
+}
+
+#icono-credito, #icono-escudo, #icono-regalo{
+    font-size:2em;
+    padding: 0;
+    margin-bottom: 10px;
+    color: #0044aa;
+}
+
+
+.titulos-footer{
+    margin: 0;
+    padding: 0;
+}
+
+.parrafo-footer{
+    margin: 0;
+    padding: 0;
+}
+
+.articulo-footer{
+    margin: 0 40px 50px 40px;
+}
+
+.copy{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: left;
+    color: grey;
+}
+
+/*---IMÁGENES---*/
+
+img{
+    width:100%;
+}
+
+/*---MAIN---*/
+
+main{
+    margin: auto;
+    width: 90vw;
+}
+
+/*---ARTICULOS---*/
+
+.articulo-producto{
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.main-article{
+    border-top:#ebebeb 1px solid;
+    padding:15px;
+}
+
+.descripcion{
+    display:none;
+    font-weight: 100;
+    margin-top: 15px;
+    color:#696969;
+}
+
+.espacio-neg{
+    padding-bottom: 20px;
+}
+
+
+/*---PRECIO Y DESCUENTO---*/
+
+.precio-descuento{
+    display:flex;
+    align-items: center;
+}
+
+.precio{
+    width: 30%;
+}
+
+.descuento{
+    width: 70%;
+    color:#39b54a;
+}
+
+
+
+/*---HEADER---*/
+
+.contenedor-nav{
+    text-align: center;
+}
+
+.logo-y-barra{
+    display:flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.div-logo{
+    width:50%;
+    padding-left:15px;
+    padding-top:10px;
+}
+
+.form-busqueda{
+    width:50%;
+}
+
+.barra-busqueda{
+    width:80%;
+    border:none;
+    padding: 7px;
+    border-radius: 2px;
+}
+
+.compraEnCuotas{
+    margin: 10px 0;
+}
+
+.boton-lupa{
+    position:relative;
+    right:19px;
+    border:none;
+    background-color: white;
+
+}
+
+
+/*---REGISTER---*/
+
+#fecha_nacimiento{
+    background-color: white;
+    color: #0022AA;
+}
+
+.perfil_de_usuario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+.categoria_intereses{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    
+}
+
+.label-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.label-box label{
+    margin-bottom: 20px;
+}
+
+.categoria-box input{
+    margin-bottom: 20px;
+}
+
+.categoria-box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.top-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    
+}
+
+.top-form input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+form h4{
+    margin: 12px 0;
+}
+
+.mid-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mid-form input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+.log-in-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.log-in-box input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+.log-in-box h4{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.buttons-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.buttons-form button{
+    padding: 8px;
+    margin: 0 10px;
+    background-color: #0044AA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.buttons-form button:hover{
+    background-color: #ffffff;
+    color:rgb(0, 0, 0);
+
+}
+
+/*LOGIN*/
+
+.form-log-in{
+    margin: 30px 0;
+}
+
+.usuario_password{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.usuario_password input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+.usuario_password button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.usuario_password button:hover{
+    background-color: #0022AA;
+    color:white;
+
+}
+
+.form-log-in form input{
+    margin-bottom: 30px;
+}
+
+
+
+/*---MEDIA QUERYS---*/
+
+/*---TABLETS O MAYOR---*/
+@media (min-width: 361px){
+
+    .descripcion{
+        display:block;
+    }
+
+    .primerLista, .segundaLista{
+        display: block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .flexbox-productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section article{
+    width: 48%;
+    }
+
+    .precio{
+        padding-right: 10px;
+        width:100%;
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-navbar ul{
+        display: flex;
+    }
+
+    .main-navbar li{
+        margin: 30px 5px 10px 5px;
+        padding-right: 5px;
+    }
+
+    .contenedor-nav{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-y-barra{
+        padding: 10px 0 0 20px;
+    }
+
+    .compraEnCuotas{
+        margin: 10px 10px 0 0;
+    }
+
+
+    .form-register{
+        max-width: 70%;
+    }
+
+    .upload-profile-img h4{
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .form-log-in{
+        max-width: 100%;
+        margin: auto;
+    }
+
+
+    .form-log-in{
+        padding: 30px 0;
+    }
+    
+    main section article .descripcion{
+        display: none;
+    }
+
+    main section article:hover .descripcion{
+        display: block;
+    }
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .form-register{
+        margin:auto;
+    }
+
+}
+
+/*--DESKTOP--*/
+
+@media (min-width: 769px){
+    main section article{
+        width: 23%;
+    }
+
+    .form-register{
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .form-log-in{
+        max-width: 60%;
+    }
+
+
+    .flex-footer{
+       display: flex;
+       flex-wrap: nowrap;
+       max-width: 90%;
+       margin:auto;
+    }
+
+    .compraEnCuotas{
+        margin: 10px 100px 0 0;
+    }
+
+    
+    .logo-y-barra{
+        padding: 10px;
+        justify-content: space-between;
+    }
+    
+
+    
+    .form-busqueda{
+        width:80%;
+        padding-left: 30px;
+    }
+    
+    .barra-busqueda{
+        width:90%;
+        border:none;
+        padding: 7px;
+        border-radius: 2px;
+    }
+
+
+    .main-navbar li{
+        margin: 30px 5px 10px 5px;
+        padding-right: 40px;
+    }
+
+    .form-register{
+        max-width: 50%;
+    }
+
+    .perfil_de_usuario{
+        max-width: 60%;
+    }
+
+    #icono-credito:hover, #icono-escudo:hover, #icono-regalo:hover{
+        color: #39b54a;
+    }
+
+    .form-log-in{
+        padding: 100px 0;
+        max-width: 50%;
+    }
+
+    .form-log-in h3{
+        padding-bottom: 20px;
+    }
+
+}
+
+
+
+@media (min-width: 361px) and (max-width: 400px){
+    .main-navbar li{
+        font-size: 10px;
+    }   
+}
