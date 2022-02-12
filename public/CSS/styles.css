@@ -237,6 +237,10 @@ main{
 
 /*---REGISTER---*/
 
+.form-register{
+    padding: 10px 0;
+}
+
 #fecha_nacimiento{
     background-color: white;
     color: #0022AA;
@@ -468,9 +472,9 @@ form h4{
         margin: 10px 10px 0 0;
     }
 
-
     .form-register{
-        max-width: 70%;
+        max-width: 80%;
+        padding: 50px;
     }
 
     .upload-profile-img h4{
@@ -580,6 +584,7 @@ form h4{
     .form-log-in h3{
         padding-bottom: 20px;
     }
+
 
 }
 
