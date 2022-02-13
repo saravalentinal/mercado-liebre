@@ -11,8 +11,6 @@ body{
         background-color: #ebebeb;
     }
     
-
-
 .titulares{
     font-size: 24px;
     color: rgb(107, 107, 107);
@@ -287,8 +285,6 @@ main{
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    
-    
 }
 
 .top-form input{
@@ -594,4 +590,16 @@ form h4{
     .main-navbar li{
         font-size: 10px;
     }   
+
+    .upload-profile-img{
+        font-size: 90%;
+    }
+
+}
+
+@media (min-width: 361px) and (max-width: 429px){
+    .boton-borrar{
+        position: relative;
+        bottom: -10px;
+    }
 }
