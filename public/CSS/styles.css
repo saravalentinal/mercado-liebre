@@ -229,7 +229,6 @@ main{
     right:19px;
     border:none;
     background-color: white;
-
 }
 
 
@@ -487,6 +486,7 @@ form h4{
     .form-log-in{
         padding: 30px 0;
     }
+
     
     main section article .descripcion{
         display: none;
@@ -520,8 +520,14 @@ form h4{
 
     .form-log-in{
         max-width: 60%;
+        margin-bottom: 120px;
     }
 
+
+    .form-log-in h3{
+        font-size: 30px;
+        margin-top: 55px;
+    }
 
     .flex-footer{
        display: flex;
