@@ -75,7 +75,9 @@ main section div.flexbox-productos article div.main-article i:hover{
     padding:0;
 }
 
-
+.segundaLista li i {
+    padding-left: 5px;
+}
 
 /*---BURGER---*/
 
