@@ -63,6 +63,7 @@ main section div.flexbox-productos article div.main-article i:hover{
 
 .primerLista li a, .segundaLista li a{
     text-decoration: none;
+    color: black;
 }
 
 .primerLista, .segundaLista{
