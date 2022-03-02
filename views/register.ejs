@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head')%>
+
+
+<body>
+
+    <%- include('./partials/header')%>
+
+
+    <main class="seccion-main">
+
+        <main>
+            <form method="GET" action="/" class="form-register">
+
+                <h4>Datos personales</h4>
+                <div class="top-form">
+                <label for="nombre"></label>
+                <input type="text" name="nombre_y_apellido" id="nombre" placeholder="Nombre y Apellido" minlength="5" required>
+        
+                <label for="nombre_usuario"></label>
+                <input type="text" name="nombre_user" id="nombre_usuario" placeholder="Nombre de usuario" minlength="5" required>
+        
+                <label for="email_cliente"></label>
+                <input type="email" name="email" id="email_cliente" placeholder="E-mail" required>
+                </div>
+        
+                <h4>Fecha de Nacimiento</h4>
+                <div class="mid-form">
+                <label for="fecha_nacimiento"></label>
+                <input type="date" name="fecha_de_nacimiento" id="fecha_nacimiento">
+                
+                <label for="domicilio"></label>
+                <input type="text" name="domicilio_usuario" id="domicilio" placeholder="Domicilio">
+                </div>
+
+                <h4>Perfil de usuario</h4>
+                <div class="perfil_de_usuario">
+                <input type="radio" name="option" value="comprador">
+                <label for="option">Comprador</label>
+                
+                <input type="radio" name="option" value="vendedor">
+                <label for="option">Vendedor</label>
+                </div>
+        
+                <h4>Intereses</h4>
+                <div class="categoria_intereses">
+
+                <div class="label-box">
+                    <label for="electro">Electro</label>
+                    <label for="moda">Moda</label>
+                    <label for="hogar">Hogar</label>
+                    <label for="jugueteria">Jugueteria</label>
+                    <label for="vida_sana">Vida Sana</label>
+                </div>
+
+                <div class="categoria-box">
+                <input type="checkbox" name="categoria_interes" value="resp_electro" id="electro">
+                <input type="checkbox" name="categoria_interes" value="resp_moda" id="moda">
+                <input type="checkbox" name="categoria_interes" value="resp_hogar" id="hogar">
+                <input type="checkbox" name="categoria_interes" value="resp_jugueteria" id="jugueteria">
+                <input type="checkbox" name="categoria_interes" value="resp_vida_sana" id="vida_sana">
+                </div>
+                </div>
+
+                <div class="upload-profile-img">
+                <h4>Subir una imagen para el perfil:</h4>
+                <input type="file" name="avatar" accept=".jpg" required>
+                </div>
+        
+                <div class="log-in-box">
+                <h4>Contraseña</h4>
+                <label for="contra"></label>
+                <input type="password" name="clave" id="contra" required>
+        
+                <h4>Confirmar contraseña</h4>
+                <label for="contra_confirm"></label>
+                <input type="password" name="clave_confirm" id="contra_confirm" required>
+                </div>
+                
+
+
+                <div class="buttons-form">
+                    <button type="submit">Enviar</button>
+                    <button type="reset" class="boton-borrar">Borrar datos</button>
+                </div>
+        
+                
+            </form>
+        </main>
+    
+    </main>
+
+    <%- include('./partials/footer')%>
+
+
+</body>
+</html>

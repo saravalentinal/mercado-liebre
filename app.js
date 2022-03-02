@@ -4,9 +4,13 @@ const app = express();
 const mainRoutes = require('./Routers/mainRoutes');
 const publicPath = path.resolve(__dirname, './public');
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname,'/views'));
+
 app.use(mainRoutes);
 
 app.use(express.static(publicPath));
+
 
 app.listen(process.env.PORT || 3000, function() {
     console.log('Servidor corriendo');
